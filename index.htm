@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>金句.com</title>
+                
+    <!-- OUR STYLESHEET -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    
+</head>
+
+<body>
+
+
+  <button onclick="randomLink()">菜根譚</button>
+
+  <script>
+    function randomLink() {
+  
+      const randomNumber = Math.floor(Math.random() * 680);
+
+      const link = `https://www.8bei8.com/book/caigentan_${randomNumber}.html`;
+
+      window.open(link, '_blank');
+    }
+    </script>
+    </body>
+</html>
+
+

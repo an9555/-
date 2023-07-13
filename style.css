@@ -1,0 +1,44 @@
+body {
+	height: 97vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("photo.jpg");
+	box-sizing: cover;
+	background-position: 100%;
+}
+
+button {
+	text-decoration: none;
+	color: #23356a;
+	font-family: sans-serif;
+	font-size: 40px;
+	border: 3px solid white;
+	padding: 40px 80px;
+	position: relative;
+	transition: all 1s;
+	overflow: hidden;
+	
+}
+
+button:before {
+	content: '金句GET!';
+	color: white;
+	background-color: #23356a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	transform: translateY(-100%);
+	transition:all .5s;
+
+}
+
+button:hover:before {
+	transform: translateY(0);
+
+}
